@@ -12,7 +12,7 @@ const (
 	CHUNKS = 8
 )
 
-// generateRandomElements generates random elements.
+// generateRandomElements генерирует случайные элементы.
 func generateRandomElements(size int) []int {
 	// Если размер 0 или отрицательный, возвращаем пустой слайс
 	if size <= 0 {
@@ -26,7 +26,7 @@ func generateRandomElements(size int) []int {
 	return data
 }
 
-// maximum returns the maximum number of elements.
+// maximum возвращает максимальное значение элемента.
 func maximum(data []int) int {
 	// Обрабатываем крайний случай: пустой слайс
 	if len(data) == 0 {
@@ -42,7 +42,7 @@ func maximum(data []int) int {
 	return maxVal
 }
 
-// maxChunks returns the maximum number of elements in a chunks.
+// maxChunks возвращает максимальное значение элемента в частях.
 func maxChunks(data []int) int {
 	if len(data) == 0 {
 		return 0
